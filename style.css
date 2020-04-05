@@ -1258,7 +1258,7 @@ display: block; /* remove extra space below image */
 	max-width: 100%;
 	text-align: center;
 }
-.contact-us .contact-form .button a
+.contact-us .contact-form .button button
 {
 	border-radius: 4px;
 	color: #ffffff;
@@ -1272,11 +1272,11 @@ display: block; /* remove extra space below image */
 	background-color: #345cdb;
 	box-shadow: 0px 0px 15px #d5d5d5;
 }
-.contact-us .contact-form .button a .fas
+.contact-us .contact-form .button button .fas
 {
 	font-size: 20px;	
 }
-.contact-us .contact-form .button a:hover
+.contact-us .contact-form .button button:hover
 {
 	background-color: #000000;
 	color: #ffffff;
