@@ -120,3 +120,14 @@ const navbar = document.querySelector(".navbar");
   		document.documentElement.scrollTop = 0;
 	})
 
+
+function myFunction(x) {
+  x.classList.toggle("fa-times");
+}
+
+var modal = document.getElementById('modal-wrapper');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
