@@ -16,7 +16,8 @@
 				<a href="" class=logo>D<span>.</span></a>
 			</div>
 			<div class="ham-burger">
-				<i class="fas fa-bars"></i>
+				<i onclick="myFunction(this)" class="fas fa-bars"></i>
+
 			</div>
 			<div class="navbar">
 				<ul>
@@ -55,12 +56,29 @@
 						</h1>
 						<h3></h3>
 						<div class="cv-btn">
-							<a href="path/resume.pdf" download="resume.pdf" >Download CV</a>
+							<a href="path/resume.pdf" download="resume.pdf" ><i class="fas fa-file-download"></i>   Download CV</a>
 
 						</div>
-						<div id="navbar">
-						<span class="navlink" id="resume"><a href="#resumeModal" data-toggle="modal"><i class="fa fa-file-text-o" aria-hidden="true"></i></a></span>
-					</div>
+						<button onclick="document.getElementById('modal-wrapper').style.display='block'" style="width: 125px;margin-top: 27px; margin-left: 0px; font-family: 'Satisfy', cursive;"><i class="fas fa-envelope-open-text"></i>     Open CV</button>
+
+						<div id="modal-wrapper" class="modal">
+						  
+						  <form class="modal-content animate">
+						        
+						    <div class="imgcontainer">
+						      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+						      
+						      <h1 style="text-align:center ;font-size:20px; color:#10ADDF; ">My CV</h1>
+						    </div>
+
+						    <div class="container">
+						      <embed src="path/resume.pdf" width="500" height="600" 
+						 type="application/pdf">
+						    </div>
+						    
+						  </form>
+						  
+						</div>
 						  
 
     
@@ -174,23 +192,26 @@
      data-aos-easing="linear"
      data-aos-duration="1500" id="counter">
 							<div class="skill-box">
-								<h6>HTML</h6>
+								<!-- <h6>HTML</h6> -->
+								<img src="images/skills/html5.png">
 								<div class="skill-bar" data-percent="92%">
-									<div class="html skill-bar-in" style="width: 92% ; background-color: #8B05FA">
+									<div class="html skill-bar-in" style="width: 92% ; background-color: #F7650C ">
 										<span>92%</span>
 									</div>
 								</div>
 							</div>
 							<div class="skill-box">
-								<h6>CSS3</h6>
+								<!-- <h6>CSS3</h6> -->
+								<img src="images/skills/css3.png">
 								<div class="skill-bar" data-percent="80%">
-									<div class="css skill-bar-in" style="width: 80% ; background-color: #FAA505">
+									<div class="css skill-bar-in" style="width: 80% ; background-color: #0CBEF7 ">
 										<span>80%</span>
 									</div>
 								</div>
 							</div>
 							<div class="skill-box">
-								<h6>JS</h6>
+								<!-- <h6>JS</h6> -->
+								<img src="images/skills/js.png">
 								<div class="skill-bar" data-percent="87%">
 									<div class="js skill-bar-in" style="width: 87% ; background-color: #D7C20E">
 										<span>87%</span>
@@ -198,7 +219,8 @@
 								</div>
 							</div>
 							<div class="skill-box">
-								<h6>C++</h6>
+								<!-- <h6>C++</h6> -->
+								<img src="images/skills/cpp.png">
 								<div class="skill-bar" data-percent="95%">
 									<div class="cpp skill-bar-in" style="width: 95% ; background-color: #0523FA ">
 										<span>95%</span>
@@ -206,7 +228,8 @@
 								</div>
 							</div>
 							<div class="skill-box">
-								<h6>Java</h6>
+								<!-- <h6>Java</h6> -->
+								<img src="images/skills/java.png">
 								<div class="skill-bar" data-percent="84%">
 									<div class="java skill-bar-in" style="width: 84% ; background-color: #FA2D04 ">
 										<span>84%</span>
@@ -214,7 +237,8 @@
 								</div>
 							</div>
 							<div class="skill-box">
-								<h6>Python</h6>
+								<!-- <h6>Python</h6> -->
+								<img src="images/skills/python.png">
 								<div class="skill-bar" data-percent="74%">
 									<div class="python skill-bar-in" style="width: 74% ; background-color: #38AC15">
 										<span>74%</span>
