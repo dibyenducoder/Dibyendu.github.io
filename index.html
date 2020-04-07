@@ -8,12 +8,14 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+	
 	<!--Header-->
 	<header >
 		<div class="container">
 		   <div class="row">
 			 <div class="brand-name">
-				<a href="" class=logo>D<span>.</span></a>
+				<!-- <a href="" class=logo>D<span>.</span></a> -->
+				<a href="" class=logo><img src="favicon/penguin.ico"><span>.</span></a>
 			</div>
 			<div class="ham-burger">
 				<i onclick="myFunction(this)" class="fas fa-bars"></i>
@@ -36,9 +38,18 @@
 	<!--End Header-->
 
 	<!--start Home-->
-
-	<section class="home" id="home">
+	
+	<section class="home" id="home" >
 		<div class="container">
+			<!-- <div class="toggle-btn"><i class="fas fa-adjust"></i></div> -->
+			<div class="toggle-btn">
+				<input type="checkbox" class="checkbox" id="chk" />
+					<label class="label" for="chk">
+						<i class="fas fa-moon"></i>
+						<i class="fas fa-sun"></i>
+						<div class="ball"></div>
+					</label>
+			</div>
 			<div class="row full-screen">
 				<div class="home-content">
 					<div class="block">
@@ -128,7 +139,7 @@
 								</div>
 
 								<div class="list">
-									<label>Age</label>
+									<label>Age:</label>
 									<p>22 Yrs</p>
 								</div>
 
@@ -184,8 +195,8 @@
 					<div class="row">
 						<div class="section-title">
 							<h1>Professional skills</h1>
-							<p>It's tough to keep up with the lastest design trends in this <span style="color: #04C5D1">coming age of technology</span>. After fully diving into web development, I looked for ways to further <span style="color: #04C5D1">hone my abilities</span> to keep producing the best possible solutions for clients.<br>
-							I have been able to get a pretty good grip for <span style="color: #04C5D1">both the technical and design side</span> of web development, but do look for ways to tackle problems from different angles. Feel free to reach out to me about any of the <span style="color: #04C5D1">skills</span> listed below!</p>
+							<p>It's tough to keep up with the lastest design trends in this <span style="color: var(--span-color)">coming age of technology</span>. After fully diving into web development, I looked for ways to further <span style="color:var(--span-color)">hone my abilities</span> to keep producing the best possible solutions for clients.<br>
+							I have been able to get a pretty good grip for <span style="color:var(--span-color)">both the technical and design side</span> of web development, but do look for ways to tackle problems from different angles. Feel free to reach out to me about any of the <span style="color:var(--span-color)">skills</span> listed below!</p>
 						</div>
 					</div>
 					<div class="row"  data-aos="fade-up"
@@ -438,8 +449,11 @@
 	<section class="copyright">
 		<div class="container">
 			
-			<p>Copyright &copy; 2020 - <span style="color: #04C5D1">Dibyendu</span></p>
+			<p>Copyright &copy; 2020 - <span style="color: #04C5D1">Dibyendu</span>
+				<br>Powered By @ <span style="color: #04C5D1">Github and Netlify</p>
+			<!-- <p class="power">Powered By - <span style="color: #04C5D1">Github and Netlify</span> </p> -->
 		</div>
+
 	</section>
 
 	<!--Popup when click plus button-->
@@ -455,6 +469,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 	<script>
   AOS.init();
 </script>
