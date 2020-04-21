@@ -303,6 +303,7 @@ header .navbar ul li a.active::before
 	background: rgba(255,255,255,0.2);
 	animation: anibox 20s linear infinite ; 
 	bottom: -150px;
+	border-radius:100%;
 }
 .home .box-area li:nth-child(1)
 {
