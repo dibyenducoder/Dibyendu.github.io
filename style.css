@@ -699,7 +699,7 @@ header .navbar ul li a.active::before
 }
 .about-me .about-content .img img 
 {
-	width: 120%;
+	width: 100%;
 	display: block;
 	filter: inherit;
 
