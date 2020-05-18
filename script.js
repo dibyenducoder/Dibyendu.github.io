@@ -172,5 +172,5 @@ chk.addEventListener('change', () => {
 
 $(window).load(function() {
 		// Animate loader off screen
-		$(".se-pre-con").delay(6000).fadeOut("slow");;
+		$(".se-pre-con").delay(3000).fadeOut("slow");;
 	});
